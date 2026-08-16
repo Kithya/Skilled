@@ -1,0 +1,67 @@
+export const skills: SkillRecord[] = [
+	{
+		id: "skill_001",
+		title: "API Documentation Writer",
+		slug: "api-documentation-writer",
+		description:
+			"Creates clear API references, endpoint examples, and integration guides from source code.",
+		category: "Documentation",
+		tags: ["api", "docs", "developer-tools"],
+		installCommand: "npx skills add api-documentation-writer",
+		createdAt: "2026-08-12T09:30:00.000Z",
+		authorClerkId: "user_2abc001",
+		authorEmail: "maya@example.com",
+	},
+	{
+		id: "skill_002",
+		title: "React Accessibility Auditor",
+		slug: "react-accessibility-auditor",
+		description:
+			"Reviews React interfaces for accessibility issues and recommends practical WCAG fixes.",
+		category: "Code Quality",
+		tags: ["react", "accessibility", "wcag"],
+		installCommand: "npx skills add react-accessibility-auditor",
+		createdAt: "2026-08-13T14:15:00.000Z",
+		authorClerkId: "user_2abc002",
+		authorEmail: "leo@example.com",
+	},
+	{
+		id: "skill_003",
+		title: "Database Schema Explorer",
+		slug: "database-schema-explorer",
+		description:
+			"Maps database tables, relationships, and constraints into concise implementation notes.",
+		category: "Data",
+		tags: ["database", "schema", "sql"],
+		installCommand: "npx skills add database-schema-explorer",
+		createdAt: "2026-08-14T08:45:00.000Z",
+		authorClerkId: "user_2abc003",
+		authorEmail: "nora@example.com",
+	},
+	{
+		id: "skill_004",
+		title: "Release Notes Generator",
+		slug: "release-notes-generator",
+		description:
+			"Turns commit history and merged pull requests into polished release notes for users.",
+		category: "Productivity",
+		tags: ["git", "releases", "automation"],
+		installCommand: "npx skills add release-notes-generator",
+		createdAt: "2026-08-15T11:20:00.000Z",
+		authorClerkId: "user_2abc004",
+		authorEmail: "sam@example.com",
+	},
+	{
+		id: "skill_005",
+		title: "Incident Response Guide",
+		slug: "incident-response-guide",
+		description:
+			"Organizes incident evidence, drafts timelines, and suggests clear operational next steps.",
+		category: "Operations",
+		tags: ["incidents", "reliability", "runbooks"],
+		installCommand: "npx skills add incident-response-guide",
+		createdAt: "2026-08-16T06:10:00.000Z",
+		authorClerkId: null,
+		authorEmail: null,
+	},
+];
