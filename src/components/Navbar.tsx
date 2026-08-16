@@ -1,3 +1,4 @@
+import { Show, UserButton } from "@clerk/tanstack-react-start";
 import { Link } from "@tanstack/react-router";
 import { LogIn } from "lucide-react";
 import React from "react";
@@ -13,11 +14,18 @@ const Navbar = () => {
 				<Link to="/">Skilled</Link>
 			</div>
 
-			<div className="action">
-				<Link to="/sign-in/$" className="btn-primary">
-					<LogIn size={16} />
-					Sign In
-				</Link>
+			<div className="actions">
+				<Show when={"signed-in"}>
+					<UserButton />
+				</Show>
+
+				<Show when={"signed-out"}>
+					{/* <SignInButton mode="modal" /> */}
+					<Link to="/sign-in/$" className="btn-primary">
+						<LogIn size={16} />
+						Sign In
+					</Link>
+				</Show>
 			</div>
 		</nav>
 	);
